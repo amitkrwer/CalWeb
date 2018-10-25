@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>CalWeb</display-name>
+	
+
+	<servlet>
+		<servlet-name>GetUserDataServlet</servlet-name>
+		<servlet-class>com.root.servlet.GetUserDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetUserDataServlet</servlet-name>
+		<url-pattern>/getUserData</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QueryAreaServlet</servlet-name>
+		<servlet-class>com.root.servlet.QueryAreaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryAreaServlet</servlet-name>
+		<url-pattern>/queryArea</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QueryStateServlet</servlet-name>
+		<servlet-class>com.root.servlet.QueryStateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryStateServlet</servlet-name>
+		<url-pattern>/queryState</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sub</servlet-name>
+		<jsp-file>/form.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sub</servlet-name>
+		<url-pattern>/submit</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>form.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
