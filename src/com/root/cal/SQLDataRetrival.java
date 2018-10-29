@@ -80,4 +80,9 @@ public class SQLDataRetrival {
 		return connection;
 
 	}
+
+
+	public static void main(String[] args){
+		
+	}
 }
