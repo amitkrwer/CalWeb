@@ -62,7 +62,7 @@ public class SQLDataRetrival {
 
 	}
 
-//database creation
+	//database creation
 	public Connection createConnection() {
 //		String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 		String DB_URL = "jdbc:mysql://localhost/pincodedump?autoReconnect=true&useSSL=false";
